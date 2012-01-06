@@ -1,0 +1,24 @@
+Source: x11proto-record
+Section: x11
+Priority: optional
+Maintainer: YoungHoon Jung <yhoon.jung@samsung.com>, SangJin Lee <lsj119@samsung.com>, Debian X Strike Force <debian-x@lists.debian.org>
+Uploaders: SooChan Lim <sc1.lim@samsung.com>, David Nusinow <dnusinow@debian.org>, Andres Salomon <dilinger@debian.org>, Julien Cristau <jcristau@debian.org>, YoungHoon Jung <yhoon.jung@samsung.com>
+Build-Depends: debhelper (>= 5.0.0), automake, xutils-dev (>= 1:7.3~1)
+Standards-Version: 3.8.3
+Vcs-Git: git://git.debian.org/git/pkg-xorg/proto/x11proto-record
+Vcs-Browser: http://git.debian.org/?p=pkg-xorg/proto/x11proto-record.git
+
+Package: x11proto-record-dev
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libxtst-dev (<< 2:1.0.99.2)
+Description: X11 Record extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Record extension, used to record and play back event sequences.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org recordproto proto module.
