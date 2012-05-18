@@ -17,7 +17,7 @@ Description: %{summary}
 
 
 %prep
-%setup -q -n recordproto-%{version}
+%setup -q -n %{name}-%{version}
 
 %build
 
