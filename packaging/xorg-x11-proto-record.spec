@@ -1,7 +1,7 @@
 Name:     xorg-x11-proto-record
 Summary:  X.Org X11 Protocol recordproto
 Version:  1.14.2
-Release:  1
+Release:  2
 Group:    Development/System
 License:  MIT
 URL:      http://www.x.org
@@ -43,3 +43,4 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %{_includedir}/X11/extensions/*.h
 %{_datadir}/pkgconfig/*.pc
+
